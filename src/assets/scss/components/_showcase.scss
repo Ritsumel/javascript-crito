@@ -1,0 +1,90 @@
+.showcase {
+    background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+
+    .background-lines {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        @media (min-width: 1200px) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            text-align: left;
+        }
+
+            h1 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 900;
+                font-size: 40px;
+
+                @media (min-width: 768px) {
+                    font-size: 70px;
+                }
+
+                @media (min-width: 1400px)  {
+                    font-size: 86px;
+                }
+            }           
+
+            p {
+                font-size: 16px;
+                padding-top: 15px;
+                padding-bottom: 45px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                @media (min-width: 768px) {
+                    font-size: 19px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+
+            a {
+                margin-right: 0px;
+                padding-top: 19px;
+                display: block;
+                margin-bottom: 20px;
+
+                @media (min-width: 768px) {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+
+            .btn-transparent {
+                background-color: transparent;
+                border: 1px solid #191919;
+
+                &:hover {
+                    background-color: #191919;
+                    border: 1px solid #191919;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        img {
+            display: none;
+            margin-top: 50px;
+            margin-right: -50px;
+
+            @media (min-width: 1200px) {
+                display: block;
+            }
+        }
+    }
+}

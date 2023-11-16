@@ -1,0 +1,152 @@
+.testimonial {
+    background-color: #F9D783;
+    padding-bottom: 148px;
+
+    @media (min-width: 1200px) {
+        padding-bottom: 248px;
+    }
+
+    .container {
+        position: relative;
+        padding-top: 50px;
+        z-index: 0;
+
+        @media (min-width: 1200px) {
+            padding-top: 120px;
+        }
+
+        .white-box {
+            position: absolute;
+            margin-top: -100px;
+            background-color: #FFFFFF;
+            z-index: -1;
+
+            @media (min-width: 1200px) {
+                height: 887px;
+                width: 1208px;
+                margin-left: -50px;
+            }
+
+            @media (min-width: 1400px) {
+                height: 887px;
+                width: 1520px;
+                margin-left: -100px;
+            }
+        }
+
+        #p1 {
+            font-size: 18px;
+            color: #F94D1C;
+        }
+
+        #p2 {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        #p3 {
+            color: #F94D1C;
+            margin-left: 85px;
+            margin-top: -5px;
+        }
+
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            margin-left: 85px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 45px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 800;
+        }
+
+        .review-stars {
+            color: #F94D1C;
+            
+            i {
+                margin: 3px;
+            }
+        }
+
+        .box1 {
+             text-align: center;
+        }
+
+        .box2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-top: 80px;
+            gap: 100px;
+
+            @media (min-width: 992px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .review-1 {
+                margin-left: 10px;
+
+                .cassandra-warren {
+                    padding-top: 10px;
+                    
+                    img {
+                        position: absolute;
+                    }
+                }
+            }
+
+            .review-2 {
+                margin-left: 5px;
+                margin-right: 5px;
+
+                .amanda-tulling {
+                    padding-top: 10px;
+                    
+                    img {
+                        position: absolute;
+                    }
+                }
+            }
+
+            .review-3 {
+                margin-right: 10px;
+
+                .jack-mcdogglas {
+                    padding-top: 10px;
+                    
+                    img {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+
+        .reviews-button {
+            text-align: center;
+            padding-top: 100px;
+
+            .btn-black {
+                display: flex;
+                justify-content: center;
+                background-color: #191919;
+                padding-top: 20px;
+                color: #FFFFFF;
+                border: 1px solid black;
+
+                @media (min-width: 992px) {
+                    display: inline;
+                }
+                
+                &:hover {
+                    background-color: #FFFFFF;
+                    border: 1px solid black;
+                    color: #191919;
+                }
+            }
+        }
+    }
+}

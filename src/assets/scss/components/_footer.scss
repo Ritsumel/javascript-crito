@@ -1,0 +1,138 @@
+footer {
+    background-color: #0E1021;
+    padding-top: 100px;
+    position: relative;
+
+    .background-lines-white-right {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: grid;
+            position: absolute;
+            bottom: 76px;
+            right: 0;
+        }
+    }
+    
+    .container {
+
+        p {
+            color: #9d9d9d;
+        }
+
+        a {
+            color: #9d9d9d;
+            text-decoration: none;
+        }
+        
+        h3 {
+            color: #FFFFFF;
+            font-size: 22px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 800;
+            padding-bottom: 15px;
+        }
+
+        .box1 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: "logotype logotype company" 
+                                    "help resources link";
+            gap: 60px;
+
+            @media (min-width: 992px) {
+                grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "logotype logotype company help resources link";
+            }
+
+            .logotype {
+                margin-left: -14px;
+                margin-right: 20px;
+
+                p {
+                    padding-top: 25px;
+                }
+
+            }
+
+            .company {
+                margin-left: 14px;
+                margin-right: 14px;
+                padding-top: 20px;
+
+                a {
+                    line-height: 2.5;
+                }
+
+                nav {
+                    margin-right: 40px;
+                }
+
+            }
+
+            .help {
+                margin-left: 23px;
+                margin-right: -23px;
+                padding-top: 20px;
+
+                a {
+                    line-height: 2.5;
+                }
+            }
+
+            .resources {
+                margin-left: 53px;
+                margin-right: -53px;
+                padding-top: 20px;
+
+                a {
+                    line-height: 2.5;
+                }
+            }
+
+            .link {
+                margin-left: 73px;
+                margin-right: -73px;
+                padding-top: 20px;
+
+                a {
+                    line-height: 2.5;
+                }
+            }
+        }
+    }
+
+    .line {
+        border-top: 1px solid #9d9d9d;
+        margin-top: 90px;
+        opacity: 25%;
+    }
+
+    .container {
+        margin-top: 25px; 
+        
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+    
+            p {
+                margin-left: -14px;
+            }
+
+            .socialmedia-bar {
+                margin-right: -30px;
+                margin-bottom: 26px;
+
+                a {
+                    padding-right: 16px;
+                    color: #FFFFFF;
+                    transition: color 0.2s ease-in-out;
+                    
+                    &:hover {
+                        color: #ffffffb8;
+                    }
+                }
+            }
+        }
+    }
+}

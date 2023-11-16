@@ -1,0 +1,163 @@
+.message-forms {
+
+    .container {
+        background-color: #F0EFE9;
+        padding-top: 120px;
+        padding-bottom: 70px;
+
+        .successfulMessage, .errorMessage {
+            color: green;
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: -10px;
+        }
+
+        .errorMessage {
+            color: rgb(214, 37, 37);
+        }
+
+        .leave-message {
+            text-align: center;
+            margin: 0px 0px;
+
+            @media (min-width: 992px) {
+                margin: 0px 200px;
+            }
+
+            @media (min-width: 1200px) {
+                margin: 0px 350px;
+            }
+
+            @media (min-width: 1400px) {
+                margin: 0px 420px;
+            }
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 800;
+                margin-bottom: -10px;
+            }
+        }
+
+        .inputs {
+            margin: 20px 20px;
+
+            label {
+                color: rgb(214, 37, 37);
+                margin-left: 30px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            @media (min-width: 768px) {
+                margin: 20px 50px;
+            }
+
+            @media (min-width: 992px) {
+                margin: 20px 60px;
+            }
+
+            @media (min-width: 1200px) {
+                margin: 20px 50px;
+            }
+
+            @media (min-width: 1400px) {
+                margin: 20px 135px;
+            }
+
+            input {
+                width: 95%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                margin-left: 20px;
+                padding-top: 10px;
+            }
+
+            .name {
+                /* margin-bottom: 20px; */
+                margin-top: -10px;
+                width: 480px;
+                background-color: #FFFFFF;
+                border-radius: 35px;
+                padding: 10px;
+
+                @media (min-width: 768px) {
+                    width: 600px;
+                }
+
+                @media (min-width: 992px) {
+                    width: 800px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 1020px;
+                }
+            }
+
+            .email {
+                /* margin-bottom: 20px; */
+                margin-top: -10px;
+                width: 480px;
+                background-color: #FFFFFF;
+                border-radius: 35px;
+                padding: 10px;
+
+                @media (min-width: 768px) {
+                    width: 600px;
+                }
+
+                @media (min-width: 992px) {
+                    width: 800px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 1020px;
+                }
+            }
+
+            .message {
+                margin-bottom: 20px;
+                margin-top: -10px;
+                width: 480px;
+                background-color: #FFFFFF;
+                border-radius: 35px;
+                padding: 10px;
+                height: 160px;
+
+                @media (min-width: 768px) {
+                    width: 600px;
+                }
+
+                @media (min-width: 992px) {
+                    width: 800px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 1020px;
+                }
+            }
+        }
+
+        .send-message-button {
+            margin: 40px 135px;
+
+            .btn-message {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+
+                i {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    img {
+        padding-top: 120px;
+        width: 100%;
+    }
+}
