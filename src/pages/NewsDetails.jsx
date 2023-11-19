@@ -5,6 +5,8 @@ import ArticleAndNews from '@components/ArticleAndNews'
 import SmallShowcase from '@components/SmallShowcase'
 import { UseProducts } from '../components/contexts/ProductContext'
 import { useParams } from 'react-router-dom'
+import FetchedArticle from '../components/generics/FetchedArticle'
+import SingleArticle from '../components/SingleArticle'
 
 const NewsDetails = () => {
   const { id } = useParams()
@@ -12,12 +14,12 @@ const NewsDetails = () => {
 
   useEffect(() => {
     getArticle()
-  }, [])
+  }, [id])
 
 
   const getArticle = async () => {
     if (id !== undefined) {
-      const result = await fetch(`https://win23assignimg.blob.core.windows.net/images/${id}`)
+      const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
 
       if (result.status === 200) 
       setArticle(await result.json())
@@ -39,7 +41,15 @@ const NewsDetails = () => {
 
         <main>
         <SmallShowcase headline="News & Articles" link1="Home" link2="News" goto="/News" />
-        <div>{ id }</div>
+        <SingleArticle
+        id={article.id}
+        title={article.title}
+        content={article.content}
+        imageUrl={article.imageUrl}
+        published={article.published}
+        category={article.category}
+        author={article.author}
+         />
 {/*         {
           article ?
           (
