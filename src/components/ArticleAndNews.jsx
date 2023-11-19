@@ -1,10 +1,8 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
-import img_25_mars from '@images/25-mars.jpg'
-import img_17_mars from '@images/17-mars.jpg'
-import img_13_mars from '@images/13-mars.jpg'
+import Articles from '../components/generics/Articles'
 
 const ArticleAndNews = ({ backgroundColor }) => {
+
   return (
     <section className="article-and-news" style={{ backgroundColor }}>
         <div className="container">
@@ -18,36 +16,7 @@ const ArticleAndNews = ({ backgroundColor }) => {
                 </div>
             </div>
             <div className="box2">
-                <Link to="/NewsDetails" className="images-link">
-                    <div className="images">
-                        <div className="images-box"><img src={img_25_mars} alt="woman with brown hair smiling sitting at a desk with a cup on itr" />
-                            <div className="yellow-box"><p id="p3">25</p><p id="p4">Mar</p></div>
-                        </div>
-                    </div>
-                    <p id="p1">Business</p>
-                    <h3>How To Use Digitalization In The Classroom</h3>
-                    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </Link>
-                <Link to="/Article17mars" className="images-link">
-                    <div className="images">
-                        <div className="images-box"><img src={img_17_mars} alt="chat gpt functions" />
-                            <div className="yellow-box"><p id="p3">17</p><p id="p4">Mar</p></div>
-                        </div>
-                    </div>
-                    <p id="p1">Business</p>
-                    <h3>How To Implement Chat GPT In Your Projects</h3>
-                    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </Link>
-                <Link to="/Article13mars" className="images-link">
-                    <div className="images">
-                        <div className="images-box"><img src={img_13_mars} alt="css design guide books" />
-                            <div className="yellow-box"><p id="p3">13</p><p id="p4">Mar</p></div>
-                        </div>
-                    </div>
-                    <p id="p1">Business</p>
-                    <h3>The Guide To Support Modern CSS Design</h3>
-                    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </Link>
+                <Articles maxArticles={3} />
             </div>
             <div className="dots">
             <nav>

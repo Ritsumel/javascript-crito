@@ -87,7 +87,11 @@ const MessageForms = () => {
                     <button type="submit" className="btn-yellow btn-message">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>
                 </div>
             </form>
-        <img src={img_map} />
+            <div className="google-maps-image">
+                <a href="https://maps.app.goo.gl/EVjii7oPHdu91bzZ8" target="_blank" rel="noopener noreferrer">
+                    <img src={img_map} alt="Location on Map" />
+                </a>
+            </div>
         </section>
     )
 }

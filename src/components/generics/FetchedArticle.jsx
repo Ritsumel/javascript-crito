@@ -7,7 +7,7 @@ const FetchedArticle = ({ title, content, imageUrl, published, category }) => {
     const dateMonth = months [date.getMonth()];
 
   return (
-    <div className='fetched-article container'>
+    <div to="" className='fetched-article container'>
         <div className='images'>
             <div className='images-box'>
                 <div className="yellow-box"><p id="p3">{dateDay}</p><p id="p4">{dateMonth}</p></div>

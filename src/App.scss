@@ -126,10 +126,56 @@ html, body {
     }
 }
 
+.article-list {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+
+        #p2 {
+            margin-right: 50px;
+            padding-bottom: 50px;
+        }
+
+        h3 {
+            margin-right: 30px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+
+        #p2 {
+            margin-right: 100px;
+        }
+
+        h3 {
+            margin-right: 100px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        h3 {
+            margin-right: 0px;
+        }
+
+        #p2 {
+            margin-right: 0px;
+        }
+    }
+}
+
 .article-side {
 
     .recent-posts {
-        border: 1px solid black;
+        border: 2px solid #D1D1D1;
+    }
+
+    .line {
+        border-bottom: 2px solid #E7E7E7;
     }
 }
 
@@ -171,72 +217,6 @@ html, body {
         padding-bottom: 90px;
     }
 }
-
-/* .article-page-section {
-
-    .articles-page {
-        padding-top: 130px;
-        
-        h2 {
-            font-size: 45px;
-            font-weight: 800;
-            font-family: 'DM Sans', sans-serif;
-            margin-left: 14px;
-            margin-bottom: 40px;
-        }
-
-        .articles {
-            display: grid;
-            grid-template-columns: 1fr;
-
-            #p2 {
-                margin-right: 210px;
-                padding-bottom: 20px;
-            }
-
-            h3 {
-                margin-right: 240px;
-            }
-
-            @media (min-width: 992px) {
-                grid-template-columns: 1fr 1fr;
-
-                #p2 {
-                    margin-right: 50px;
-                    padding-bottom: 50px;
-                }
-
-                h3 {
-                    margin-right: 30px;
-                }
-            }
-
-            @media (min-width: 1200px) {
-                grid-template-columns: 1fr 1fr;
-
-                #p2 {
-                    margin-right: 100px;
-                }
-
-                h3 {
-                    margin-right: 100px;
-                }
-            }
-
-            @media (min-width: 1400px) {
-                grid-template-columns: 1fr 1fr 1fr;
-
-                h3 {
-                    margin-right: 0px;
-                }
-
-                #p2 {
-                    margin-right: 0px;
-                }
-            }
-        }
-    }
-} */
 
 .fetched-article {
 

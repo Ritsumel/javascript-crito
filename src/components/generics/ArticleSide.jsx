@@ -1,5 +1,4 @@
 import React from 'react'
-
 import SearchBar from './SearchBar'
 
 const ArticleSide = () => {
@@ -13,14 +12,17 @@ const ArticleSide = () => {
                 <p id='title'>How To Blow Through Capital At An Incredible Rate</p>
                 <p id='date'>Jan 14, 2020</p>
             </div>
+            <div className='line'></div>
             <div className='post2'>
                 <p id='title'>How To Blow Through Capital At An Incredible Rate</p>
                 <p id='date'>Jan 14, 2020</p>
             </div>
+            <div className='line'></div>
             <div className='post3'>
                 <p id='title'>How To Blow Through Capital At An Incredible Rate</p>
                 <p id='date'>Jan 14, 2020</p>
             </div>
+            <div className='line'></div>
             <div className='post4'>
                 <p id='title'>How To Blow Through Capital At An Incredible Rate</p>
                 <p id='date'>Jan 14, 2020</p>
