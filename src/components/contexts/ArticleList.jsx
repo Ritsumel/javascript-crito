@@ -1,8 +1,8 @@
 import React from 'react'
-import { UseProducts } from './contexts/ProductContext';
+import { useProducts } from './contexts/ProductContext';
 
 const ArticleList = () => {
-    const { articles } = UseProducts()
+    const { articles } = useProducts()
 
   return (
     <div className='article-list'>

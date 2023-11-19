@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Articles from '../components/generics/Articles'
+import Dots from './generics/dots'
 
 const ArticleAndNews = ({ backgroundColor }) => {
 
@@ -19,13 +20,7 @@ const ArticleAndNews = ({ backgroundColor }) => {
                 <Articles maxArticles={3} />
             </div>
             <div className="dots">
-            <nav>
-                <a className="active" href="articles-roll-1.html"></a>
-                <a href="articles-roll-2.html"></a>
-                <a href="articles-roll-3.html"></a>
-                <a href="articles-roll-4.html"></a>
-                <a href="articles-roll-5.html"></a>
-            </nav>
+                <Dots />
             </div>
         </div>
     </section>

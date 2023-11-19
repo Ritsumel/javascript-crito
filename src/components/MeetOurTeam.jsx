@@ -4,6 +4,8 @@ import img_kristine_palmer from '@images/kristine-palmer.jpg'
 import img_mark_aubri from '@images/mark-aubri.jpg'
 import img_kimberly_hansen from '@images/kimberly-hansen.jpg'
 import img_justin_willoman from '@images/justin-willoman.jpg'
+import Member from './generics/Member'
+import Dots from './generics/dots'
 
 const MeetOurTeam = () => {
   return (
@@ -19,35 +21,13 @@ const MeetOurTeam = () => {
                 </div>
             </div>
             <div className="box2">
-                <div className="kristine-palmer">
-                    <img src={img_kristine_palmer} alt="woman with brown hair smiling wearing a gray blazer" />
-                    <h3>Kristine Palmer</h3>
-                    <p>Chef Operation Officer</p>
-                </div>
-                <div className="mark-aubri">
-                    <img src={img_mark_aubri} alt="guy smiling holding his hands wearing a suit" />
-                    <h3>Mark Aubri</h3>
-                    <p>Senior Consultant</p>
-                </div>
-                <div className="kimberly-hansen">
-                    <img src={img_kimberly_hansen} alt="woman with black hair smiling by a window while holding hands over a book" />
-                    <h3>Kimberly Hansen</h3>
-                    <p>Senior Consultant</p>
-                </div>
-                <div className="justin-willoman">
-                    <img src={img_justin_willoman} alt="guy smiling with dark brown hair wearing a black jacket standing against a white wall" />
-                    <h3>Justin Willoman</h3>
-                    <p>Senior Tech Consultant</p>
-                </div>
+                <Member className={'kristine-palmer'} image={img_kristine_palmer} alt={'woman with brown hair smiling wearing a gray blazer'} name={'Kristine Palmer'} position={'Chef Operation Officer'} />
+                <Member className={'mark-aubri'} image={img_mark_aubri} alt={'guy smiling holding his hands wearing a suit'} name={'Mark Aubri'} position={'Senior Consultant'} />
+                <Member className={'kimberly-hansen'} image={img_kimberly_hansen} alt={'woman with black hair smiling by a window while holding hands over a book'} name={'Kimberly Hansen'} position={'Senior Consultant'} />
+                <Member className={'justin-willoman'} image={img_justin_willoman} alt={'guy smiling with dark brown hair wearing a black jacket standing against a white wall'} name={'Justin Willoman'} position={'Senior Tech Consultant'} />
             </div>
             <div className="dots">
-            <nav>
-                <a href="#"></a>
-                <a className="active" href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </nav>
+                <Dots />
             </div>
         </div>
     </section>

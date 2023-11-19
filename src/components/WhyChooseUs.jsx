@@ -1,5 +1,6 @@
 import React from 'react'
 import img_girls_talking from '@images/girls-talking.jpg'
+import ChooseUsCard from './generics/ChooseUsCard'
 
 const WhyChooseUs = () => {
   return (
@@ -9,26 +10,10 @@ const WhyChooseUs = () => {
                 <p id="p1">Why Choose Us</p>
                 <h2>Why We Are The Best Business Consulting Agency</h2>
                 <div className="small-boxes">
-                    <div className="process-excellence">
-                        <i className="fa-regular fa-thumbs-up"></i>
-                        <h3>Process Excellence</h3>
-                        <p id="p2">Lorem, ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div className="strategic-planning">
-                        <i className="fa-regular fa-shapes"></i>
-                        <h3>Strategic Planning</h3>
-                        <p id="p2">Lorem, ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div className="experience-design">
-                        <i className="fa-regular fa-pen-nib"></i>
-                        <h3>Experience Design</h3>
-                        <p id="p2">Lorem, ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <div className="artificial-intelligence">
-                        <i className="fa-regular fa-head-side-gear"></i>
-                        <h3>Artificial Intelligence</h3>
-                        <p id="p2">Lorem, ipsum dolor sit amet consectetur.</p>
-                    </div>
+                    <ChooseUsCard className={"process-excellence"} classNameIcon={"fa-regular fa-thumbs-up"} title={"Process Excellence"} text={"Lorem, ipsum dolor sit amet consectetur."} />
+                    <ChooseUsCard className={"strategic-planning"} classNameIcon={"fa-regular fa-shapes"} title={"Strategic Planning"} text={"Lorem, ipsum dolor sit amet consectetur."} />
+                    <ChooseUsCard className={"experience-design"} classNameIcon={"fa-regular fa-pen-nib"} title={"Experience Design"} text={"Lorem, ipsum dolor sit amet consectetur."} />
+                    <ChooseUsCard className={"artificial-intelligence"} classNameIcon={"fa-regular fa-head-side-gear"} title={"Artificial Intelligence"} text={"Lorem, ipsum dolor sit amet consectetur."} />
                 </div>
             </div>
             <div className="box2">

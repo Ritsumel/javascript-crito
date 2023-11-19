@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FeatureCard from './generics/FeatureCard'
 
 const Features = () => {
   return (
@@ -12,26 +13,10 @@ const Features = () => {
                 <Link to="/Services" className="btn-yellow btn-learnmore">Learn More <i className="fa-regular fa-arrow-up-right"></i></Link>
             </div>
             <div className="box2">
-                <div className="business-advice">
-                    <i className="fa-regular fa-handshake"></i>
-                    <h3>Business Advice</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div className="startup-business">
-                    <i className="fa-regular fa-lightbulb-on"></i>
-                    <h3>Startup Business</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div className="financial-advice">
-                    <i className="fa-regular fa-chart-mixed-up-circle-dollar"></i>
-                    <h3>Financial Advice</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div className="risk-management">
-                    <i className="fa-regular fa-folder-gear"></i>
-                    <h3>Risk Management</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                <FeatureCard className={"business-advice"} classNameIcon={"fa-regular fa-handshake"} title={"Business Advice"} text={"Lorem ipsum, dolor sit amet consectetur adipisicing elit."} />
+                <FeatureCard className={"startup-business"} classNameIcon={"fa-regular fa-lightbulb-on"} title={"Startup Business"} text={"Lorem ipsum, dolor sit amet consectetur adipisicing elit."} />
+                <FeatureCard className={"financial-advice"} classNameIcon={"fa-regular fa-chart-mixed-up-circle-dollar"} title={"Financial Advice"} text={"Lorem ipsum, dolor sit amet consectetur adipisicing elit."} />
+                <FeatureCard className={"risk-management"} classNameIcon={"fa-regular fa-folder-gear"} title={"Risk Management"} text={"Lorem ipsum, dolor sit amet consectetur adipisicing elit."} />
             </div>
         </div>
     </section>

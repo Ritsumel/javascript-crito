@@ -10,13 +10,15 @@ import { ProductProvider } from './components/contexts/ProductContext'
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/newsdetails/:id" element={<NewsDetails />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      {/* <ProductProvider> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/newsdetails/:id" element={<NewsDetails />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      {/* </ProductProvider> */}
     </BrowserRouter>
   )
 }

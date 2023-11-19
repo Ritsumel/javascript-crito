@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchBar from './generics/SearchBar'
 import Tag from './generics/tag'
+import RecentPost from './generics/RecentPost';
 
 
 const SingleArticle = ({ title, content, imageUrl, published, category, author }) => {
@@ -30,45 +31,33 @@ const SingleArticle = ({ title, content, imageUrl, published, category, author }
             </div>
             <div className='article-right-side'>
                 <div className='searchbar'><SearchBar /></div>
-                <div className='upper-box'>
-                    <div className='recent-posts'>
-                        <h3>Recent Posts</h3>
-                        <div className='title-border'></div>
-                        <div className='post'>
-                            <p id='title'>How To Blow Through Capital At An Incredible Rate</p>
-                            <p id='date'>Jan 14, 2020</p>
-                        </div>
-                        <div className='line'></div>
-                        <div className='post'>
-                            <p id='title'>Design Studios That Everyone Should Know About?</p>
-                            <p id='date'>Jan 14, 2020</p>
-                        </div>
-                        <div className='line'></div>
-                        <div className='post'>
-                            <p id='title'>How did we get 1M+ visitors in 30 days without anything!</p>
-                            <p id='date'>Jan 14, 2020</p>
-                        </div>
-                        <div className='line'></div>
-                        <div className='post'>
-                            <p id='title'>Figma On Figma: How We Built Our Website Design System</p>
-                            <p id='date'>Jan 14, 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='lower-box'>
-                    <div className='categories'>
-                            <h3>Categories</h3>
+                    <div className='upper-box'>
+                        <div className='recent-posts'>
+                            <h3>Recent Posts</h3>
                             <div className='title-border'></div>
-                            <div className='category-box'>
-                                <p><span id="span-1">Technology - </span><span id="span-2">20 Posts</span></p>
-                                <p><span id="span-1">Freelancing - </span><span id="span-2">07 Posts</span></p>
-                                <p><span id="span-1">Writing - </span><span id="span-2">16 Posts</span></p>
-                                <p><span id="span-1">Marketing - </span><span id="span-2">11 Posts</span></p>
-                                <p><span id="span-1">Business - </span><span id="span-2">35 Posts</span></p>
-                                <p><span id="span-1">Education - </span><span id="span-2">14 Posts</span></p>
-                            </div>
+                            <RecentPost title={"How To Blow Through Capital At An Incredible Rate"} date={"Jan 14, 2020"} />
+                            <div className='line'></div>
+                            <RecentPost title={"Design Studios That Everyone Should Know About?"} date={"Jan 14, 2020"} />
+                            <div className='line'></div>
+                            <RecentPost title={"How did we get 1M+ visitors in 30 days without anything!"} date={"Jan 14, 2020"} />
+                            <div className='line'></div>
+                            <RecentPost title={"Figma On Figma: How We Built Our Website Design System"} date={"Jan 14, 2020"} />
+                        </div>
                     </div>
-                </div>
+                    <div className='lower-box'>
+                        <div className='categories'>
+                                <h3>Categories</h3>
+                                <div className='title-border'></div>
+                                <div className='category-box'>
+                                    <p><span id="span-1">Technology - </span><span id="span-2">20 Posts</span></p>
+                                    <p><span id="span-1">Freelancing - </span><span id="span-2">07 Posts</span></p>
+                                    <p><span id="span-1">Writing - </span><span id="span-2">16 Posts</span></p>
+                                    <p><span id="span-1">Marketing - </span><span id="span-2">11 Posts</span></p>
+                                    <p><span id="span-1">Business - </span><span id="span-2">35 Posts</span></p>
+                                    <p><span id="span-1">Education - </span><span id="span-2">14 Posts</span></p>
+                                </div>
+                        </div>
+                    </div>
             </div>
     </section>
   )

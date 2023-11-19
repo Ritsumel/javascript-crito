@@ -4,6 +4,7 @@ import img_article_image_1 from '@images/article-image-1.png'
 import img_article_image_2 from '@images/article-image-2.png'
 import img_article_image_3 from '@images/article-image-3.png'
 import img_article_image_4 from '@images/article-image-4.png'
+import Project from './generics/Project'
 
 const ProjectAndCase = () => {
   return (
@@ -14,26 +15,10 @@ const ProjectAndCase = () => {
                 <h2>Let's Looks Our Global Projects</h2>
             </div>
             <div className="project-and-cases">
-                <Link to="/Newsarticle1" className="project">
-                    <img src={img_article_image_1} alt="a man's hands reading a business paper" />
-                    <h3>Grow your business</h3>
-                    <div className="readmore">Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </Link>
-                <Link to="/Newsarticle2" className="project">
-                    <img src={img_article_image_2} alt="pink apple products" />
-                    <h3>Why your client needs a responsive website</h3>
-                    <div className="readmore">Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </Link>
-                <Link to="/Newsarticle3" className="project">
-                    <img src={img_article_image_3} alt="desk with office supplies and a laptop" />
-                    <h3>Educate your employees to get better results</h3>
-                    <div className="readmore">Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </Link>
-                <Link to="/Newsarticle4" className="project">
-                    <img src={img_article_image_4} alt="laptop with business intelligence insights" />
-                    <h3>Business Insights is a important piece of your business</h3>
-                    <div className="readmore">Read More <i className="fa-regular fa-arrow-up-right"></i></div>
-                </Link>
+                <Project link={"/Newsarticle1"} image={img_article_image_1} alt={"a man's hands reading a business paper"} title={"Grow your business"} />
+                <Project link={"/Newsarticle2"} image={img_article_image_2} alt={"pink apple products"} title={"Why your client needs a responsive website"} />
+                <Project link={"/Newsarticle3"} image={img_article_image_3} alt={"desk with office supplies and a laptop"} title={"Educate your employees to get better results"} />
+                <Project link={"/Newsarticle4"} image={img_article_image_4} alt={"laptop with business intelligence insights"} title={"Business Insights is a important piece of your business"} />
             </div>
             <div className="recent-projects-button">
                 <Link to="/Projects" className="btn-yellow btn-black">All Recent Projects <i className="fa-regular fa-arrow-up-right"></i></Link>

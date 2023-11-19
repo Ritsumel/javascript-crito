@@ -4,26 +4,17 @@ import img_dorfus from '@images/dorfus.svg'
 import img_martino from '@images/martino.svg'
 import img_square from '@images/square.svg'
 import img_gobona from '@images/gobona.svg'
+import Sponsor from './generics/Sponsor'
 
 const Sponsors = () => {
   return (
     <section className="sponsors">
         <div className="container">
-            <a className="paperz" href="#">
-                <img src={img_paperz} alt="paperz" />
-            </a>
-            <a className="dorfus" href="#">
-                <img src={img_dorfus} alt="dorfus" />
-            </a>
-            <a className="martino" href="#">
-                <img src={img_martino} alt="martino" />
-            </a>
-            <a className="square" href="#">
-                <img src={img_square} alt="square" />
-            </a>
-            <a className="gobona" href="#">
-                <img src={img_gobona} alt="gobona" />
-            </a>
+            <Sponsor classNameSponsor={"paperz"} image={img_paperz} alt={"paperz"} />
+            <Sponsor classNameSponsor={"dorfus"} image={img_dorfus} alt={"dorfus"} />
+            <Sponsor classNameSponsor={"martino"} image={img_martino} alt={"martino"} />
+            <Sponsor classNameSponsor={"square"} image={img_square} alt={"square"} />
+            <Sponsor classNameSponsor={"gobona"} image={img_gobona} alt={"gobona"} />
         </div>
     </section>
   )

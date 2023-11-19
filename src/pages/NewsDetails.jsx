@@ -3,9 +3,8 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import ArticleAndNews from '@components/ArticleAndNews'
 import SmallShowcase from '@components/SmallShowcase'
-import { UseProducts } from '../components/contexts/ProductContext'
+import { useProducts } from '../components/contexts/ProductContext'
 import { useParams } from 'react-router-dom'
-import FetchedArticle from '../components/generics/FetchedArticle'
 import SingleArticle from '../components/SingleArticle'
 
 const NewsDetails = () => {
@@ -26,7 +25,7 @@ const NewsDetails = () => {
     }
   }
 
-/*   const { article, getArticle, clearArticle } = UseProducts()
+/*   const { article, getArticle, clearArticle } = useProducts()
   const {id} = useParams()
 
   useEffect(() => {

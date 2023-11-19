@@ -1,7 +1,7 @@
 import { useContext, createContext, useState, useEffect } from "react";
 
 const ProductContext = createContext()
-export const UseProducts = () => useContext(ProductContext)
+export const useProducts = () => useContext(ProductContext)
 
 export const ProductProvider = ({children}) => {
     const apiUrl = "https://win23-assignment.azurewebsites.net/api/articles"
