@@ -6,6 +6,7 @@ import SmallShowcase from '@components/SmallShowcase'
 import ArticlePage from '../components/ArticlePage'
 
 const News = () => {
+
   return (
     <div className='wrapper'>
         <Header />

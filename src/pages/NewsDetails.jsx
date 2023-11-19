@@ -3,7 +3,6 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import ArticleAndNews from '@components/ArticleAndNews'
 import SmallShowcase from '@components/SmallShowcase'
-import { useProducts } from '../components/contexts/ProductContext'
 import { useParams } from 'react-router-dom'
 import SingleArticle from '../components/SingleArticle'
 

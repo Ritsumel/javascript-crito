@@ -5,12 +5,12 @@ import Contact from './pages/Contact'
 import News from './pages/News'
 import NewsDetails from './pages/NewsDetails'
 import NotFound from './pages/NotFound'
-import { ProductProvider } from './components/contexts/ProductContext'
+import { ArticlesProvider } from './components/contexts/ArticlesContext'
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <ProductProvider> */}
+      <ArticlesProvider>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path="/newsdetails/:id" element={<NewsDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      {/* </ProductProvider> */}
+      </ArticlesProvider>
     </BrowserRouter>
   )
 }

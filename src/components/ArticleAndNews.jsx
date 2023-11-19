@@ -1,9 +1,9 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Articles from '../components/generics/Articles'
 import Dots from './generics/dots'
 
 const ArticleAndNews = ({ backgroundColor }) => {
-
   return (
     <section className="article-and-news" style={{ backgroundColor }}>
         <div className="container">
